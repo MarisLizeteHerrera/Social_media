@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:index, :update]
     get 'my_posts', to: 'posts#my_posts'
 
-    resourcees :users, only: [:index]
+    resources :users, only: [:index]
     get 'all_users', to: 'users#all_users'
   end
 
